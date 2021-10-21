@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 export const fonts = {
   primary: {
     300: 'Poppins-Light',

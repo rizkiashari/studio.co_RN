@@ -1,7 +1,8 @@
+/* eslint-disable prettier/prettier */
 const mainColors = {
   blueBlack: '#2E475E',
   black: '#000000',
-  blackPudar: rgba(0, 0, 0, 0.6),
+  blackPudar: 'rgba(0, 0, 0, 0.6)',
   white: '#FFFFFF',
   grey1: '#929292',
   grey2: '#F2F2F2',
@@ -18,6 +19,8 @@ export const colors = {
     menuActive: mainColors.red1,
     menuInActive: mainColors.white,
     black: mainColors.black,
+    white: mainColors.white,
+    grey3: mainColors.grey3,
   },
   button: {
     primary: {

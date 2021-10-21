@@ -1,3 +1,6 @@
-import WelcomePage from './WelcomePage';
+/* eslint-disable prettier/prettier */
 
-export {WelcomePage};
+import WelcomePageStart from './WelcomePageStart';
+import WelcomeProtokol from './WelcomeProtokol';
+
+export {WelcomePageStart, WelcomeProtokol};

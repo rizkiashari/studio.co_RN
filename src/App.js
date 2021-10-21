@@ -1,11 +1,12 @@
+import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
-import {Text, View} from 'react-native';
+import Router from './router';
 
 const App = () => {
   return (
-    <View>
-      <Text>Hello I'm React Native</Text>
-    </View>
+    <NavigationContainer>
+      <Router />
+    </NavigationContainer>
   );
 };
 

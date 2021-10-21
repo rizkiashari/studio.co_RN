@@ -1,16 +1,15 @@
 /* eslint-disable prettier/prettier */
-
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 
-const WelcomePage = () => {
+const WelcomeProtokol = () => {
   return (
     <View>
-      <Text>Welcome Page</Text>
+      <Text>Welcome Protokol</Text>
     </View>
   );
 };
 
-export default WelcomePage;
+export default WelcomeProtokol;
 
 const styles = StyleSheet.create({});
