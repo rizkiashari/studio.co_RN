@@ -22,7 +22,7 @@ const MainApp = () => {};
 
 const Router = () => {
   return (
-    <Stack.Navigator initialRouteName="PaymentCancel">
+    <Stack.Navigator initialRouteName="PaymentBerhasil">
       <Stack.Screen
         name="Splash"
         component={Splash}

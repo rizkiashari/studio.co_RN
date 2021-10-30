@@ -17,7 +17,7 @@ const PaymentCancel = () => {
           Pembatalan Pesanan Studiomu telah berhasil
         </Text>
         <Gap height={28} />
-        <Button title="Home" type="primary" width={400} border={5} />
+        <Button title="Home" type="primary" width={384} border={5} />
       </View>
     </View>
   );
@@ -31,11 +31,11 @@ const styles = StyleSheet.create({
     backgroundColor: colors.whiteBg,
     justifyContent: 'center',
     alignItems: 'center',
+    paddingVertical: 30,
   },
   container: {
     justifyContent: 'center',
     alignItems: 'center',
-    paddingVertical: 16,
   },
   image: {
     width: 360,
