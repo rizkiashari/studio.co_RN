@@ -3,10 +3,10 @@ import React from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
 import {colors, fonts} from '../../../utils';
 
-const IlustrationWelcome = ({image, title, subTitle}) => {
+const IlustrationWelcome = ({image, title, subTitle, height, width}) => {
   return (
     <View style={styles.container}>
-      <Image source={image} style={styles.ilustration} />
+      <Image source={image} style={styles.ilustration(width, height)} />
       <Text style={styles.title}>{title}</Text>
       <Text style={styles.subTitle}>{subTitle}</Text>
     </View>
@@ -20,10 +20,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  ilustration: {
-    width: 278,
-    height: 183,
-  },
+  ilustration: (width, height) => ({
+    width: width,
+    height: height,
+  }),
   title: {
     fontSize: 18,
     fontFamily: fonts.primary[700],

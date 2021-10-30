@@ -5,5 +5,6 @@ import ILUangTerjamin from './uang_terjamin_IL.png';
 import ILEnd from './end_IL.png';
 import ILCancel from './cancel_IL.png';
 import ILSuccess from './success_IL.png';
+import Logo from './logo.png';
 
-export {ILStart, ILProtokol, ILUangTerjamin, ILEnd, ILCancel, ILSuccess};
+export {ILStart, ILProtokol, ILUangTerjamin, ILEnd, ILCancel, ILSuccess, Logo};

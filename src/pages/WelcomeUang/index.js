@@ -1,27 +1,28 @@
 /* eslint-disable prettier/prettier */
+
 import React from 'react';
 import {ScrollView, StyleSheet, View} from 'react-native';
-import {ILProtokol} from '../../assets';
+import {ILUangTerjamin} from '../../assets';
 import {Button, Gap, IlustrationWelcome, Slogan} from '../../components';
 
-const WelcomeProtokol = ({navigation}) => {
+const WelcomeUang = ({navigation}) => {
   return (
     <View style={styles.page}>
       <ScrollView>
         <View>
           <Gap height={44} />
           <Slogan />
-          <Gap height={74} />
+          <Gap height={70} />
           <View>
             <IlustrationWelcome
-              image={ILProtokol}
-              width={266}
-              height={243}
-              subTitle="Protokol kesehatan yang sudah terstandar WHO"
-              title="Protokol Kesehatan"
+              image={ILUangTerjamin}
+              width={250}
+              height={227}
+              subTitle="Sistem Pengembalian Uang Sangat terjamin"
+              title="Pengembalian Uang Terjamin"
             />
           </View>
-          <Gap height={118} />
+          <Gap height={110} />
         </View>
         <View style={styles.wrapper}>
           <Button
@@ -35,7 +36,7 @@ const WelcomeProtokol = ({navigation}) => {
             border="next/skip"
             title="Next"
             type="primary"
-            onPress={() => navigation.replace('WelcomeUang')}
+            onPress={() => navigation.replace('GetStarted')}
           />
         </View>
       </ScrollView>
@@ -43,7 +44,7 @@ const WelcomeProtokol = ({navigation}) => {
   );
 };
 
-export default WelcomeProtokol;
+export default WelcomeUang;
 
 const styles = StyleSheet.create({
   page: {

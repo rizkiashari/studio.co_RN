@@ -19,11 +19,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: border === 'next/skip' ? 30 : 5,
-    width: border === 'next/skip' ? 105 : '100%',
-    height: 37,
+    width: border === 'next/skip' ? 108 : '100%',
+    height: 44,
   }),
   text: type => ({
     color: type === 'primary' ? colors.text.white : colors.text.grey3,
     fontFamily: fonts.primary[500],
+    fontSize: 16,
   }),
 });

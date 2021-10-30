@@ -22,6 +22,9 @@ export const colors = {
     white: mainColors.white,
     grey3: mainColors.grey3,
   },
+  background: {
+    primary: mainColors.white,
+  },
   button: {
     primary: {
       background: mainColors.blueBlack,
@@ -34,6 +37,7 @@ export const colors = {
     },
   },
   border: mainColors.blueBlack,
+  ternatry: mainColors.grey2,
   field: {
     background: mainColors.grey2,
     text: mainColors.grey3,

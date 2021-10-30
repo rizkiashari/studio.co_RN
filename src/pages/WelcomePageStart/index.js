@@ -1,33 +1,36 @@
 /* eslint-disable prettier/prettier */
 
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
+import {ScrollView, StyleSheet, View} from 'react-native';
 import {ILStart} from '../../assets';
 import {Button, Gap, IlustrationWelcome, Slogan} from '../../components';
 
 const WelcomePageStart = ({navigation}) => {
-  // console.log('navigation: ', navigation);
   return (
     <View style={styles.page}>
-      <View>
-        <Gap height={44} />
-        <Slogan />
-        <Gap height={100} />
+      <ScrollView>
         <View>
-          <IlustrationWelcome
-            image={ILStart}
-            subTitle="Booking Studio dengan aman, tidak perlu takut privasi anda terganggu"
-            title="Mulai Memesan Studio Fotografi"
-          />
+          <Gap height={44} />
+          <Slogan />
+          <Gap height={100} />
+          <View>
+            <IlustrationWelcome
+              image={ILStart}
+              height={184}
+              width={277}
+              subTitle="Booking Studio dengan aman, tidak perlu takut privasi anda terganggu"
+              title="Mulai Memesan Studio Fotografi"
+            />
+          </View>
+          <Gap height={118} />
         </View>
-        <Gap height={118} />
-      </View>
-      <Button
-        border="next/skip"
-        title="Next"
-        type="primary"
-        onPress={() => navigation.navigate('WelcomeProtokol')}
-      />
+        <Button
+          border="next/skip"
+          title="Next"
+          type="primary"
+          onPress={() => navigation.replace('WelcomeProtokol')}
+        />
+      </ScrollView>
     </View>
   );
 };
