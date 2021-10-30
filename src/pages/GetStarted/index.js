@@ -27,7 +27,7 @@ const GetStarted = ({navigation}) => {
           type="primary"
           width={135}
           border={30}
-          onPress={() => navigation.replace('Home')}
+          onPress={() => navigation.replace('MainApp')}
         />
       </View>
     </View>

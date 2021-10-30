@@ -1,18 +1,17 @@
 /* eslint-disable prettier/prettier */
-
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {colors} from '../../utils';
 
-const Home = () => {
+const History = () => {
   return (
     <View style={styles.page}>
-      <Text>Home</Text>
+      <Text>History</Text>
     </View>
   );
 };
 
-export default Home;
+export default History;
 
 const styles = StyleSheet.create({
   page: {

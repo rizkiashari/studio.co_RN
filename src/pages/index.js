@@ -4,6 +4,8 @@ import WelcomePageStart from './WelcomePageStart';
 import WelcomeProtokol from './WelcomeProtokol';
 import Splash from './Splash';
 import Home from './Home';
+import Profile from './Profile';
+import History from './History';
 import SignUp from './SignUp';
 import SignIn from './SignIn';
 
@@ -14,6 +16,8 @@ export {
   WelcomeProtokol,
   Splash,
   Home,
+  Profile,
+  History,
   SignUp,
   SignIn,
   PaymentBerhasil,
