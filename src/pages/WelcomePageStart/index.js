@@ -24,12 +24,16 @@ const WelcomePageStart = ({navigation}) => {
           </View>
           <Gap height={118} />
         </View>
-        <Button
-          border="next/skip"
-          title="Next"
-          type="primary"
-          onPress={() => navigation.replace('WelcomeProtokol')}
-        />
+        <View style={styles.btnNext}>
+          <Gap width={100} />
+          <Button
+            border="next/skip"
+            title="Next"
+            type="primary"
+            onPress={() => navigation.replace('WelcomeProtokol')}
+          />
+          <Gap width={80} />
+        </View>
       </ScrollView>
     </View>
   );
@@ -43,5 +47,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffffff',
     justifyContent: 'flex-start',
     alignItems: 'center',
+  },
+  btnNext: {
+    flexDirection: 'row',
   },
 });

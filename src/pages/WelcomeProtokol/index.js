@@ -9,19 +9,19 @@ const WelcomeProtokol = ({navigation}) => {
     <View style={styles.page}>
       <ScrollView>
         <View>
-          <Gap height={44} />
+          <Gap height={40} />
           <Slogan />
-          <Gap height={74} />
+          <Gap height={60} />
           <View>
             <IlustrationWelcome
               image={ILProtokol}
-              width={266}
-              height={243}
+              width={260}
+              height={240}
               subTitle="Protokol kesehatan yang sudah terstandar WHO"
               title="Protokol Kesehatan"
             />
           </View>
-          <Gap height={118} />
+          <Gap height={128} />
         </View>
         <View style={styles.wrapper}>
           <Button

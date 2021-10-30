@@ -9,20 +9,18 @@ const WelcomeUang = ({navigation}) => {
   return (
     <View style={styles.page}>
       <ScrollView>
-        <View>
-          <Gap height={44} />
+        <View style={styles.content01}>
+          <Gap height={40} />
           <Slogan />
-          <Gap height={70} />
-          <View>
-            <IlustrationWelcome
-              image={ILUangTerjamin}
-              width={250}
-              height={227}
-              subTitle="Sistem Pengembalian Uang Sangat terjamin"
-              title="Pengembalian Uang Terjamin"
-            />
-          </View>
-          <Gap height={110} />
+          <Gap height={60} />
+          <IlustrationWelcome
+            image={ILUangTerjamin}
+            width={250}
+            height={227}
+            subTitle="Sistem Pengembalian Uang Sangat terjamin"
+            title="Pengembalian Uang Terjamin"
+          />
+          <Gap height={120} />
         </View>
         <View style={styles.wrapper}>
           <Button
@@ -56,5 +54,6 @@ const styles = StyleSheet.create({
   wrapper: {
     flexDirection: 'row',
     justifyContent: 'space-evenly',
+    flex: 2,
   },
 });

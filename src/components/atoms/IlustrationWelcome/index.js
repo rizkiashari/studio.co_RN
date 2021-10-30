@@ -28,15 +28,14 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontFamily: fonts.primary[700],
     color: colors.text.black,
-    marginTop: 37,
+    marginTop: 28,
   },
   subTitle: {
     fontSize: 11,
     fontFamily: fonts.primary[500],
-    marginTop: 4,
     color: colors.text.secondary,
     width: 235,
     textAlign: 'center',
-    lineHeight: 20,
+    lineHeight: 18,
   },
 });

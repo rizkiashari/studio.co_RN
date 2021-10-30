@@ -15,7 +15,9 @@ const Slogan = () => {
 export default Slogan;
 
 const styles = StyleSheet.create({
-  container: {},
+  container: {
+    padding: 0,
+  },
   title: {
     fontFamily: fonts.primary[700],
     fontSize: 36,
