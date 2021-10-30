@@ -21,12 +21,15 @@ const GetStarted = ({navigation}) => {
         </View>
         <Gap height={118} />
       </View>
-      <Button
-        border="next/skip"
-        title="Get Started"
-        type="primary"
-        onPress={() => navigation.replace('Home')}
-      />
+      <View>
+        <Button
+          title="Get Started"
+          type="primary"
+          width={135}
+          border={30}
+          onPress={() => navigation.replace('Home')}
+        />
+      </View>
     </View>
   );
 };

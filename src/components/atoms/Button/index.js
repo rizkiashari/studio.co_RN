@@ -3,9 +3,11 @@ import React from 'react';
 import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 import {colors, fonts} from '../../../utils';
 
-const Button = ({title, onPress, type, border}) => {
+const Button = ({title, onPress, type, border, width}) => {
   return (
-    <TouchableOpacity style={styles.container(type, border)} onPress={onPress}>
+    <TouchableOpacity
+      style={styles.container(type, border, width)}
+      onPress={onPress}>
       <Text style={styles.text(type)}>{title}</Text>
     </TouchableOpacity>
   );
@@ -14,12 +16,12 @@ const Button = ({title, onPress, type, border}) => {
 export default Button;
 
 const styles = StyleSheet.create({
-  container: (type, border) => ({
+  container: (type, border, width) => ({
     backgroundColor: type === 'primary' ? colors.primary : colors.secondary,
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: border === 'next/skip' ? 30 : 5,
-    width: border === 'next/skip' ? 108 : '100%',
+    borderRadius: border,
+    width: width,
     height: 44,
   }),
   text: type => ({

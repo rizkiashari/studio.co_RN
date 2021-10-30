@@ -24,14 +24,16 @@ const WelcomeUang = ({navigation}) => {
         </View>
         <View style={styles.wrapper}>
           <Button
-            border="next/skip"
+            border={30}
+            width={108}
             title="Skip"
             type="secondary"
             onPress={() => navigation.replace('Home')}
           />
           <Gap width={104} />
           <Button
-            border="next/skip"
+            border={30}
+            width={108}
             title="Next"
             type="primary"
             onPress={() => navigation.replace('GetStarted')}

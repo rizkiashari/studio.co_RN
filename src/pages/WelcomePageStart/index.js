@@ -27,7 +27,8 @@ const WelcomePageStart = ({navigation}) => {
         <View style={styles.btnNext}>
           <Gap width={100} />
           <Button
-            border="next/skip"
+            border={30}
+            width={108}
             title="Next"
             type="primary"
             onPress={() => navigation.replace('WelcomeProtokol')}
