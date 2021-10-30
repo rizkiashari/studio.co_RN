@@ -39,6 +39,7 @@ export const colors = {
     },
   },
   border: mainColors.blueBlack,
+  border02: mainColors.grey3,
   ternatry: mainColors.grey2,
   field: {
     background: mainColors.grey2,

@@ -30,18 +30,23 @@ const MainApp = () => {
         component={History}
         options={{headerShown: false}}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Profile"
         component={Profile}
         options={{headerShown: false}}
-      />
+      /> */}
     </Tab.Navigator>
   );
 };
 
 const Router = () => {
   return (
-    <Stack.Navigator initialRouteName="MainApp">
+    <Stack.Navigator initialRouteName="Profile">
+      <Tab.Screen
+        name="Profile"
+        component={Profile}
+        options={{headerShown: false}}
+      />
       <Stack.Screen
         name="Splash"
         component={Splash}

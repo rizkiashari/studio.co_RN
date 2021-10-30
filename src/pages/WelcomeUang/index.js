@@ -52,6 +52,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffffff',
     justifyContent: 'flex-start',
     alignItems: 'center',
+    paddingHorizontal: 30,
   },
   wrapper: {
     flexDirection: 'row',
