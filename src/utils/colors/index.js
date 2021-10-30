@@ -13,6 +13,7 @@ const mainColors = {
 export const colors = {
   primary: mainColors.blueBlack,
   secondary: mainColors.grey2,
+  whiteBg: mainColors.white,
   text: {
     primary: mainColors.blueBlack,
     secondary: mainColors.grey1,
@@ -21,6 +22,7 @@ export const colors = {
     black: mainColors.black,
     white: mainColors.white,
     grey3: mainColors.grey3,
+    grey1: mainColors.grey1,
   },
   background: {
     primary: mainColors.white,

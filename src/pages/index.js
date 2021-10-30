@@ -7,4 +7,14 @@ import Home from './Home';
 import SignUp from './SignUp';
 import SignIn from './SignIn';
 
-export {WelcomePageStart, WelcomeProtokol, Splash, Home, SignUp, SignIn};
+import PaymentBerhasil from './PaymentBerhasil';
+
+export {
+  WelcomePageStart,
+  WelcomeProtokol,
+  Splash,
+  Home,
+  SignUp,
+  SignIn,
+  PaymentBerhasil,
+};
