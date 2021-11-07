@@ -1,28 +1,26 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import {ScrollView, StyleSheet, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import {ILProtokol} from '../../assets';
 import {Button, Gap, IlustrationWelcome, Slogan} from '../../components';
 
 const WelcomeProtokol = ({navigation}) => {
   return (
     <View style={styles.page}>
-      <ScrollView>
+      <View>
+        <Slogan />
+        <Gap height={60} />
         <View>
-          <Gap height={40} />
-          <Slogan />
-          <Gap height={60} />
-          <View>
-            <IlustrationWelcome
-              image={ILProtokol}
-              width={260}
-              height={240}
-              subTitle="Protokol kesehatan yang sudah terstandar WHO"
-              title="Protokol Kesehatan"
-            />
-          </View>
-          <Gap height={128} />
+          <IlustrationWelcome
+            image={ILProtokol}
+            width={260}
+            height={240}
+            subTitle="Protokol kesehatan yang sudah terstandar WHO"
+            title="Protokol Kesehatan"
+          />
         </View>
+      </View>
+      <View>
         <View style={styles.wrapper}>
           <Button
             border={30}
@@ -40,7 +38,7 @@ const WelcomeProtokol = ({navigation}) => {
             onPress={() => navigation.replace('WelcomeUang')}
           />
         </View>
-      </ScrollView>
+      </View>
     </View>
   );
 };
@@ -51,9 +49,10 @@ const styles = StyleSheet.create({
   page: {
     flex: 1,
     backgroundColor: '#ffffff',
-    justifyContent: 'flex-start',
+    justifyContent: 'space-between',
     alignItems: 'center',
     paddingHorizontal: 30,
+    paddingVertical: 60,
   },
   wrapper: {
     flexDirection: 'row',

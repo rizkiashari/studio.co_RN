@@ -9,7 +9,6 @@ const ProfileHeader = () => {
   return (
     <View style={styles.container}>
       <View style={styles.wrapper}>
-        <Gap height={36} />
         <Image source={DummyUser} style={styles.image} />
         <View style={styles.camera}>
           <IconCamera />
@@ -31,6 +30,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     width: 100,
+    height: 80,
   },
   camera: {
     position: 'absolute',
@@ -40,6 +40,7 @@ const styles = StyleSheet.create({
   image: {
     width: 80,
     height: 80,
+    borderRadius: 80 / 2,
   },
   title: {
     textAlign: 'center',

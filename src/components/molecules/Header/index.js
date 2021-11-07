@@ -22,6 +22,7 @@ export default Header;
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
+    alignItems: 'center',
   },
   title: {
     color: colors.text.black,

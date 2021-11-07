@@ -8,7 +8,6 @@ const GetStarted = ({navigation}) => {
   return (
     <View style={styles.page}>
       <View>
-        <Gap height={44} />
         <Slogan />
         <Gap height={100} />
         <View>
@@ -19,7 +18,6 @@ const GetStarted = ({navigation}) => {
             title="Mulai Mencari Studio Terbaik"
           />
         </View>
-        <Gap height={118} />
       </View>
       <View>
         <Button
@@ -40,12 +38,9 @@ const styles = StyleSheet.create({
   page: {
     flex: 1,
     backgroundColor: '#ffffff',
-    justifyContent: 'flex-start',
+    justifyContent: 'space-between',
     alignItems: 'center',
     paddingHorizontal: 30,
-  },
-  wrapper: {
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
+    paddingVertical: 60,
   },
 });

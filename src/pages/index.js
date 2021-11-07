@@ -8,7 +8,7 @@ import Profile from './Profile';
 import History from './History';
 import SignUp from './SignUp';
 import SignIn from './SignIn';
-
+import DetailPage from './DetailPage';
 import PaymentBerhasil from './PaymentBerhasil';
 
 export {
@@ -20,5 +20,6 @@ export {
   History,
   SignUp,
   SignIn,
+  DetailPage,
   PaymentBerhasil,
 };

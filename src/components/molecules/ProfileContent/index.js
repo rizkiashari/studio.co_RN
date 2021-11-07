@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   container: {
     borderBottomWidth: 1,
     borderBottomColor: colors.border02,
-    paddingBottom: 5,
+    paddingBottom: 8,
   },
   judul: {
     fontSize: 16,

@@ -3,5 +3,18 @@ import BottomNavigator from './BottomNavigator';
 import Header from './Header';
 import ProfileContent from './ProfileContent';
 import ProfileHeader from './ProfileHeader';
+import HistoryItems from './HistoryItems';
+import StudioItem from './StudioItem';
+import DetailPemesanan from './DetailPemesanan';
+import DetailPembayaran from './DetailPembayaran';
 
-export {BottomNavigator, Header, ProfileContent, ProfileHeader};
+export {
+  BottomNavigator,
+  Header,
+  ProfileContent,
+  ProfileHeader,
+  HistoryItems,
+  StudioItem,
+  DetailPemesanan,
+  DetailPembayaran,
+};
