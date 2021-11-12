@@ -7,6 +7,7 @@ import Input from './Input';
 import TabItem from './TabItem';
 import InputDetail from './InputDetail';
 import CardHome from './CardHome';
+import Search from './Search';
 
 export {
   Slogan,
@@ -16,5 +17,6 @@ export {
   Input,
   TabItem,
   InputDetail,
+  Search,
   CardHome,
 };

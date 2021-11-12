@@ -24,9 +24,12 @@ import IconTelp from './icon_telp.svg';
 import IconPasswordShow from './icon_password_show.svg';
 import IconPasswordHide from './icon_password_hide.svg';
 import IconSearch from './icon_search.svg';
+import IconBackWhite from './icon_back_white.svg';
+import IconRating from './icon_rating.svg';
 
 export {
   IconBack,
+  IconRating,
   IconCamera,
   IconFavorite,
   IconHistoryActive,
@@ -50,4 +53,5 @@ export {
   IconPasswordShow,
   IconPasswordHide,
   IconSearch,
+  IconBackWhite,
 };

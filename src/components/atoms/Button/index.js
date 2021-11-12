@@ -1,9 +1,10 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity} from 'react-native';
+import {IconFavorite, IconPopuler, IconTerdekat} from '../../../assets';
 import {colors, fonts} from '../../../utils';
 
-const Button = ({title, onPress, type, border, width}) => {
+const Button = ({title, onPress, type, border, width, icon, active}) => {
   if (type === 'logout') {
     return (
       <TouchableOpacity style={styles.wrapperLogout} onPress={onPress}>
@@ -11,6 +12,18 @@ const Button = ({title, onPress, type, border, width}) => {
       </TouchableOpacity>
     );
   }
+
+  if (type === 'btnMenu') {
+    return (
+      <TouchableOpacity style={styles.btnMenu(active)} onPress={onPress}>
+        {icon === 'favorite' && <IconFavorite />}
+        {icon === 'populer' && <IconPopuler />}
+        {icon === 'terdekat' && <IconTerdekat />}
+        <Text style={styles.btnMenuText(active)}>{title}</Text>
+      </TouchableOpacity>
+    );
+  }
+
   if (type === 'detail') {
     return (
       <TouchableOpacity style={styles.wrapperDetail} onPress={onPress}>
@@ -88,4 +101,19 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontFamily: fonts.primary[500],
   },
+  btnMenu: active => ({
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderWidth: active ? 0 : 2,
+    borderRadius: 10,
+    width: 75,
+    height: 80,
+    backgroundColor: active ? colors.primary : colors.white,
+  }),
+  btnMenuText: active => ({
+    color: active ? colors.text.white : colors.text.grey3,
+    marginTop: 10,
+    fontSize: 12,
+    fontFamily: active ? fonts.primary[500] : fonts.primary[400],
+  }),
 });

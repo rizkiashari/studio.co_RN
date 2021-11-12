@@ -12,13 +12,21 @@ import DetailPage from './DetailPage';
 import PaymentBerhasil from './PaymentBerhasil';
 import PembatalanPesan from './PembatalanPesan';
 import BatalDetailName from './BatalDetailName';
+import HomeStart from './HomeStart';
+import WelcomeUang from './WelcomeUang';
+import GetStarted from './GetStarted';
+import PaymentCancel from './PaymentCancel';
+import SearchPage from './SearchPage';
 
 export {
   WelcomePageStart,
   WelcomeProtokol,
+  WelcomeUang,
   Splash,
   Home,
+  SearchPage,
   Profile,
+  GetStarted,
   History,
   SignUp,
   SignIn,
@@ -26,4 +34,6 @@ export {
   PaymentBerhasil,
   PembatalanPesan,
   BatalDetailName,
+  HomeStart,
+  PaymentCancel,
 };

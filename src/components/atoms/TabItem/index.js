@@ -44,6 +44,6 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: active ? colors.text.menuActive : colors.text.menuInActive,
     fontFamily: fonts.primary[600],
-    marginTop: 4,
+    // marginTop: 4,
   }),
 });

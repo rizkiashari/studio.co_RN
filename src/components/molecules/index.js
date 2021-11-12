@@ -8,6 +8,9 @@ import StudioItem from './StudioItem';
 import DetailPemesanan from './DetailPemesanan';
 import DetailPembayaran from './DetailPembayaran';
 import Peraturan from './Peraturan';
+import HeaderFull from './HeaderFull';
+import CardAll from './CardAll';
+import ImageBg from './ImageBackground';
 
 export {
   BottomNavigator,
@@ -19,4 +22,7 @@ export {
   DetailPemesanan,
   DetailPembayaran,
   Peraturan,
+  HeaderFull,
+  CardAll,
+  ImageBg,
 };

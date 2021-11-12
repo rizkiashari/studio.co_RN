@@ -5,20 +5,22 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {
   BatalDetailName,
   DetailPage,
+  GetStarted,
   History,
   Home,
+  HomeStart,
   PaymentBerhasil,
+  PaymentCancel,
   PembatalanPesan,
   Profile,
+  SearchPage,
   SignIn,
   SignUp,
   Splash,
   WelcomePageStart,
   WelcomeProtokol,
+  WelcomeUang,
 } from '../pages';
-import WelcomeUang from '../pages/WelcomeUang';
-import GetStarted from '../pages/GetStarted';
-import PaymentCancel from '../pages/PaymentCancel';
 import {BottomNavigator} from '../components';
 
 const Stack = createNativeStackNavigator();
@@ -44,7 +46,17 @@ const MainApp = () => {
 
 const Router = () => {
   return (
-    <Stack.Navigator initialRouteName="MainApp">
+    <Stack.Navigator initialRouteName="SearchPage">
+      <Stack.Screen
+        name="SearchPage"
+        component={SearchPage}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="HomeStart"
+        component={HomeStart}
+        options={{headerShown: false}}
+      />
       <Stack.Screen
         name="Splash"
         component={Splash}
