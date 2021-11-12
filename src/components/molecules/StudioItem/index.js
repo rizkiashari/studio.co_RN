@@ -1,10 +1,10 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import {Gap} from '../..';
+import {Gap} from '../../atoms';
 import {IconLocation, IconPopuler} from '../../../assets';
 import {colors, fonts} from '../../../utils';
 
-const StudioItem = () => {
+const StudioItem = ({name, location, rating, viewer}) => {
   return (
     <View style={styles.wrapperStudio}>
       <View style={styles.studio}>

@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import {Gap} from '../..';
+import {Gap} from '../../atoms';
 import {colors, fonts} from '../../../utils';
 
 const DetailPemesanan = () => {
@@ -28,7 +28,8 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
     borderBottomWidth: 1,
     borderTopWidth: 1,
-    borderColor: colors.border03,
+    borderTopColor: colors.border03,
+    borderBottomColor: colors.border03,
   },
   title: {
     fontFamily: fonts.primary[500],

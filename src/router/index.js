@@ -3,10 +3,12 @@ import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {
+  BatalDetailName,
   DetailPage,
   History,
   Home,
   PaymentBerhasil,
+  PembatalanPesan,
   Profile,
   SignIn,
   SignUp,
@@ -42,7 +44,7 @@ const MainApp = () => {
 
 const Router = () => {
   return (
-    <Stack.Navigator initialRouteName="Detail">
+    <Stack.Navigator initialRouteName="MainApp">
       <Stack.Screen
         name="Splash"
         component={Splash}
@@ -96,6 +98,16 @@ const Router = () => {
       <Stack.Screen
         name="PaymentCancel"
         component={PaymentCancel}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="PagePembatalan"
+        component={PembatalanPesan}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="PageBatalDetail"
+        component={BatalDetailName}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

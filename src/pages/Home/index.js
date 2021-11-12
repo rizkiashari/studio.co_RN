@@ -1,13 +1,50 @@
 /* eslint-disable prettier/prettier */
 
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, ScrollView} from 'react-native';
+import {
+  ILNoFotografer,
+  ILSewaProperti,
+  ILYesFotografer,
+  ILYesVideoFotografer,
+} from '../../assets';
+import {CardHome, Gap, Slogan} from '../../components';
 import {colors} from '../../utils';
 
 const Home = () => {
   return (
     <View style={styles.page}>
-      <Text>Home</Text>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <View>
+          <Slogan />
+          <Gap height={30} />
+          <CardHome
+            color="#356592"
+            colorText="#fff"
+            text="Sewa studio foto tanpa fotografer"
+            gambar={ILNoFotografer}
+          />
+          <Gap height={28} />
+          <CardHome
+            color="#3B8E86"
+            colorText="#fff"
+            gambar={ILYesFotografer}
+            text="Sewa studio dengan fotografer"
+          />
+          <Gap height={28} />
+          <CardHome
+            color="#DEF2EF"
+            gambar={ILYesVideoFotografer}
+            text="Sewa Freelance Fotografer dan Videographer"
+          />
+          <Gap height={28} />
+          <CardHome
+            color="#7ACAF0"
+            text="Sewa Properti"
+            gambar={ILSewaProperti}
+          />
+        </View>
+      </ScrollView>
     </View>
   );
 };
@@ -19,5 +56,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: colors.whiteBg,
     paddingHorizontal: 30,
+    paddingVertical: 30,
   },
 });

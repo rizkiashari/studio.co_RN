@@ -5,5 +5,16 @@ import IlustrationWelcome from './IlustrationWelcome';
 import Button from './Button';
 import Input from './Input';
 import TabItem from './TabItem';
+import InputDetail from './InputDetail';
+import CardHome from './CardHome';
 
-export {Slogan, Gap, IlustrationWelcome, Button, Input, TabItem};
+export {
+  Slogan,
+  Gap,
+  IlustrationWelcome,
+  Button,
+  Input,
+  TabItem,
+  InputDetail,
+  CardHome,
+};

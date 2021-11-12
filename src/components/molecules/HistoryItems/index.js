@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
-import {Button} from '../..';
+import {Button} from '../../atoms';
 import {colors, fonts} from '../../../utils';
 
 const HistoryItems = ({date, image, nameStudio, start, end}) => {

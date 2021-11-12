@@ -10,6 +10,8 @@ import SignUp from './SignUp';
 import SignIn from './SignIn';
 import DetailPage from './DetailPage';
 import PaymentBerhasil from './PaymentBerhasil';
+import PembatalanPesan from './PembatalanPesan';
+import BatalDetailName from './BatalDetailName';
 
 export {
   WelcomePageStart,
@@ -22,4 +24,6 @@ export {
   SignIn,
   DetailPage,
   PaymentBerhasil,
+  PembatalanPesan,
+  BatalDetailName,
 };

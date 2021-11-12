@@ -1,19 +1,19 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 import {IconBack} from '../../../assets/icons';
 import {colors, fonts} from '../../../utils';
 
-const Header = ({title, type}) => {
+const Header = ({title, type, onPress}) => {
   if (type === 'text') {
     return <Text style={styles.title01}>{title}</Text>;
   }
 
   return (
-    <View style={styles.container}>
+    <TouchableOpacity style={styles.container}>
       <IconBack />
       <Text style={styles.title}>{title}</Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 

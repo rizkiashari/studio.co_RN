@@ -7,6 +7,7 @@ import HistoryItems from './HistoryItems';
 import StudioItem from './StudioItem';
 import DetailPemesanan from './DetailPemesanan';
 import DetailPembayaran from './DetailPembayaran';
+import Peraturan from './Peraturan';
 
 export {
   BottomNavigator,
@@ -17,4 +18,5 @@ export {
   StudioItem,
   DetailPemesanan,
   DetailPembayaran,
+  Peraturan,
 };

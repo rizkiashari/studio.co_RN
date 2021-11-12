@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import {Gap} from '../..';
+import {Gap} from '../../atoms';
 import {colors, fonts} from '../../../utils';
 
 const DetailPembayaran = ({type}) => {
