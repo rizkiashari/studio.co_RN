@@ -1,14 +1,14 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 
-const ImageBg = () => {
+const DetailContents = () => {
   return (
     <View>
-      <Text></Text>
+      <Text>Detail Studio</Text>
     </View>
   );
 };
 
-export default ImageBg;
+export default DetailContents;
 
 const styles = StyleSheet.create({});

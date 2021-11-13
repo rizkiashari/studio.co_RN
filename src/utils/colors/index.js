@@ -35,6 +35,7 @@ export const colors = {
     secondary: {
       background: mainColors.grey2,
       text: mainColors.grey3,
+      black: mainColors.black,
       text2: mainColors.grey1,
     },
     ternary: {

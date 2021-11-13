@@ -13,6 +13,14 @@ const Button = ({title, onPress, type, border, width, icon, active}) => {
     );
   }
 
+  if (type === 'contentDetail') {
+    return (
+      <TouchableOpacity style={styles.content(active)} onPress={onPress}>
+        <Text style={styles.btnContent(active)}>{title}</Text>
+      </TouchableOpacity>
+    );
+  }
+
   if (type === 'btnMenu') {
     return (
       <TouchableOpacity style={styles.btnMenu(active)} onPress={onPress}>
@@ -115,5 +123,19 @@ const styles = StyleSheet.create({
     marginTop: 10,
     fontSize: 12,
     fontFamily: active ? fonts.primary[500] : fonts.primary[400],
+  }),
+  content: active => ({
+    backgroundColor: active
+      ? colors.button.primary.background
+      : colors.button.secondary.background,
+    paddingHorizontal: 17,
+    paddingVertical: 10,
+    borderRadius: 5,
+    fontFamily: fonts.primary[400],
+  }),
+  btnContent: active => ({
+    fontFamily: fonts.primary[400],
+    fontSize: 12,
+    color: active ? colors.button.primary.text : colors.button.secondary.black,
   }),
 });

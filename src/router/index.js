@@ -5,6 +5,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {
   BatalDetailName,
   DetailPage,
+  DetailStudio,
   GetStarted,
   History,
   Home,
@@ -46,10 +47,15 @@ const MainApp = () => {
 
 const Router = () => {
   return (
-    <Stack.Navigator initialRouteName="SearchPage">
+    <Stack.Navigator initialRouteName="DetailStudio">
       <Stack.Screen
         name="SearchPage"
         component={SearchPage}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="DetailStudio"
+        component={DetailStudio}
         options={{headerShown: false}}
       />
       <Stack.Screen

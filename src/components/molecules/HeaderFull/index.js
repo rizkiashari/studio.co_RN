@@ -1,22 +1,54 @@
 import React from 'react';
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
-import {IconBackWhite, IconMessage, IconNotification} from '../../../assets';
+import {Gap} from '../../atoms';
+import {
+  IconBackWhite,
+  IconMessage,
+  IconMessageWhite,
+  IconNotification,
+  IconNotificationWhite,
+} from '../../../assets';
 import {colors, fonts} from '../../../utils';
 
-const HeaderFull = ({onPress}) => {
+const HeaderFull = ({onPress, type}) => {
   return (
     <View style={styles.wrapper}>
-      <TouchableOpacity style={styles.btnBack} onPress={onPress}>
-        <IconBackWhite />
-      </TouchableOpacity>
+      {type === 'tanpa__text' ? (
+        <TouchableOpacity style={styles.btnBack01} onPress={onPress}>
+          <IconBackWhite />
+        </TouchableOpacity>
+      ) : (
+        <TouchableOpacity style={styles.btnBack} onPress={onPress}>
+          <IconBackWhite />
+        </TouchableOpacity>
+      )}
       <View style={styles.content}>
-        <Text style={styles.title}>Studio.co</Text>
-        <Text style={styles.desc}>#Awali hari dengan Studio.co</Text>
+        {type === 'tanpa__text' ? (
+          <Gap width={100} />
+        ) : (
+          <>
+            <Text style={styles.title}>Studio.co</Text>
+            <Text style={styles.desc}>#Awali hari dengan Studio.co</Text>
+          </>
+        )}
       </View>
-      <View style={styles.wrapperNotif}>
-        <IconMessage />
-        <IconNotification />
-      </View>
+      {type === 'tanpa__text' ? (
+        <View style={styles.wrapperNotifWhite}>
+          <View style={styles.iconMessage}>
+            <IconMessageWhite />
+          </View>
+          <View style={styles.iconMessage}>
+            <IconNotificationWhite />
+          </View>
+        </View>
+      ) : (
+        <View style={styles.wrapperNotif}>
+          <>
+            <IconMessage />
+            <IconNotification />
+          </>
+        </View>
+      )}
     </View>
   );
 };
@@ -33,6 +65,12 @@ const styles = StyleSheet.create({
     backgroundColor: colors.primary,
     borderRadius: 100,
     padding: 8,
+  },
+  btnBack01: {
+    backgroundColor: colors.primary,
+    borderRadius: 100,
+    padding: 8,
+    marginLeft: 15,
   },
   content: {
     alignItems: 'center',
@@ -51,5 +89,19 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     flex: 0.3,
+  },
+  wrapperNotifWhite: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    flex: 0.26,
+    alignItems: 'center',
+    paddingHorizontal: 20,
+    paddingVertical: 20,
+  },
+  iconMessage: {
+    backgroundColor: colors.primary,
+    borderRadius: 100,
+    padding: 4.5,
+    alignItems: 'center',
   },
 });

@@ -17,6 +17,7 @@ import WelcomeUang from './WelcomeUang';
 import GetStarted from './GetStarted';
 import PaymentCancel from './PaymentCancel';
 import SearchPage from './SearchPage';
+import DetailStudio from './DetailStudio';
 
 export {
   WelcomePageStart,
@@ -36,4 +37,5 @@ export {
   BatalDetailName,
   HomeStart,
   PaymentCancel,
+  DetailStudio,
 };

@@ -11,8 +11,8 @@ import {colors} from '../../utils';
 
 const Home = () => {
   return (
-    <View style={styles.page}>
-      <ScrollView showsVerticalScrollIndicator={false}>
+    <ScrollView showsVerticalScrollIndicator={false}>
+      <View style={styles.page}>
         <View>
           <Slogan />
           <Gap height={30} />
@@ -42,8 +42,8 @@ const Home = () => {
             gambar={ILSewaProperti}
           />
         </View>
-      </ScrollView>
-    </View>
+      </View>
+    </ScrollView>
   );
 };
 

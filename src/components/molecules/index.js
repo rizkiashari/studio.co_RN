@@ -10,7 +10,10 @@ import DetailPembayaran from './DetailPembayaran';
 import Peraturan from './Peraturan';
 import HeaderFull from './HeaderFull';
 import CardAll from './CardAll';
-import ImageBg from './ImageBackground';
+import Contents from './Contents';
+import DetailContents from './DetailContents';
+import PaketContents from './PaketContents';
+import ReviewContents from './ReviewContents';
 
 export {
   BottomNavigator,
@@ -24,5 +27,8 @@ export {
   Peraturan,
   HeaderFull,
   CardAll,
-  ImageBg,
+  Contents,
+  DetailContents,
+  PaketContents,
+  ReviewContents,
 };
