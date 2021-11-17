@@ -30,7 +30,7 @@ const SignIn = ({navigation}) => {
             <Text style={styles.forgot}>Lupa Password?</Text>
           </TouchableOpacity>
           <Gap height={45} />
-          <Button title="Sign In" type="primary" />
+          <Button title="Sign In" type="primary" border={5} />
           <Gap height={16} />
           <View style={styles.wrapperSignIn}>
             <Text style={styles.text}>Sudah punya akun?</Text>

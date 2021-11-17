@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, {useState} from 'react';
 import {
   Dimensions,
@@ -32,8 +33,8 @@ const DetailStudio = () => {
 
   const [indexSelected, setIndexSelected] = useState(0);
 
-  const onSelect = indexSelected => {
-    setIndexSelected(indexSelected);
+  const onSelect = indexSelecteds => {
+    setIndexSelected(indexSelecteds);
   };
 
   const [detailStudio, setDetailStudio] = useState(true);

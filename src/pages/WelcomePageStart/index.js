@@ -28,7 +28,6 @@ const WelcomePageStart = ({navigation}) => {
           border={30}
           width={108}
           title="Next"
-          type="primary"
           onPress={() => navigation.replace('WelcomeProtokol')}
         />
         <Gap width={80} />

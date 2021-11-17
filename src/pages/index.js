@@ -18,8 +18,10 @@ import GetStarted from './GetStarted';
 import PaymentCancel from './PaymentCancel';
 import SearchPage from './SearchPage';
 import DetailStudio from './DetailStudio';
+import PageDetailPerlengkapan from './PageDetailPerlengkapan';
 
 export {
+  PageDetailPerlengkapan,
   WelcomePageStart,
   WelcomeProtokol,
   WelcomeUang,

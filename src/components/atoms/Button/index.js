@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import {StyleSheet, Text, TouchableOpacity} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {IconFavorite, IconPopuler, IconTerdekat} from '../../../assets';
 import {colors, fonts} from '../../../utils';
 
@@ -10,6 +10,14 @@ const Button = ({title, onPress, type, border, width, icon, active}) => {
       <TouchableOpacity style={styles.wrapperLogout} onPress={onPress}>
         <Text style={styles.btnLogout}>{title}</Text>
       </TouchableOpacity>
+    );
+  }
+
+  if (type === 'perlengkapan') {
+    return (
+      <View style={styles.wrapperPerlengkapan}>
+        <Text style={styles.titlePerlengkapan}>{title}</Text>
+      </View>
     );
   }
 
@@ -40,7 +48,7 @@ const Button = ({title, onPress, type, border, width, icon, active}) => {
     );
   }
 
-  if ((type = 'batal')) {
+  if (type === 'batal') {
     return (
       <TouchableOpacity style={styles.wraperbatal} onPress={onPress}>
         <Text style={styles.btnBatal}>{title}</Text>
@@ -138,4 +146,17 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: active ? colors.button.primary.text : colors.button.secondary.black,
   }),
+  wrapperPerlengkapan: {
+    backgroundColor: colors.primary,
+    paddingVertical: 4,
+    paddingHorizontal: 12,
+    borderRadius: 20,
+    marginBottom: 4,
+    marginRight: 4,
+  },
+  titlePerlengkapan: {
+    fontSize: 12,
+    fontFamily: fonts.primary[400],
+    color: colors.text.white,
+  },
 });

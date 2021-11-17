@@ -32,12 +32,12 @@ const SignUp = ({navigation}) => {
           <Gap height={16} />
           <Input placeholder="Konfirmasi Password" type="password" />
           <Gap height={45} />
-          <Button title="Sign In" type="primary" />
+          <Button title="Sign Up" type="primary" border={5} />
           <Gap height={16} />
           <View style={styles.wrapperSignUp}>
             <Text style={styles.text}>Sudah punya akun?</Text>
             <TouchableOpacity onPress={() => navigation.navigate('SignIn')}>
-              <Text style={styles.textSignup}>Sign Up</Text>
+              <Text style={styles.textSignup}>Sign In</Text>
             </TouchableOpacity>
           </View>
         </View>

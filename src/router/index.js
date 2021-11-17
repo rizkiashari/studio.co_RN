@@ -10,6 +10,7 @@ import {
   History,
   Home,
   HomeStart,
+  PageDetailPerlengkapan,
   PaymentBerhasil,
   PaymentCancel,
   PembatalanPesan,
@@ -47,10 +48,15 @@ const MainApp = () => {
 
 const Router = () => {
   return (
-    <Stack.Navigator initialRouteName="DetailStudio">
+    <Stack.Navigator initialRouteName="SignIn">
       <Stack.Screen
         name="SearchPage"
         component={SearchPage}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="DetailPerlengkapanPage"
+        component={PageDetailPerlengkapan}
         options={{headerShown: false}}
       />
       <Stack.Screen
