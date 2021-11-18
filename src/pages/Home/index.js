@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
 import {StyleSheet, View, ScrollView} from 'react-native';
 import {
@@ -9,7 +10,7 @@ import {
 import {CardHome, Gap, Slogan} from '../../components';
 import {colors} from '../../utils';
 
-const Home = () => {
+const Home = ({navigation}) => {
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       <View style={styles.page}>
@@ -21,6 +22,7 @@ const Home = () => {
             colorText="#fff"
             text="Sewa studio foto tanpa fotografer"
             gambar={ILNoFotografer}
+            onPress={() => navigation.navigate('DetailStudio')}
           />
           <Gap height={28} />
           <CardHome

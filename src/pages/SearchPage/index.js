@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
 import {StyleSheet, Text, View, ScrollView} from 'react-native';
 import {CardAll, Gap, Header, Search} from '../../components';

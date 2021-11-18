@@ -1,15 +1,16 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
-import {Image, StyleSheet, Text, View} from 'react-native';
+import {Image, StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import {colors, fonts} from '../../../utils';
 
-const CardHome = ({color, colorText, text, gambar}) => {
+const CardHome = ({color, colorText, text, gambar, onPress}) => {
   return (
-    <View style={styles.wrapper(color)}>
+    <TouchableOpacity style={styles.wrapper(color)} onPress={onPress}>
       <View style={styles.wraperContent}>
         <Image source={gambar} style={styles.image} />
         <Text style={styles.text(colorText)}>{text}</Text>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 

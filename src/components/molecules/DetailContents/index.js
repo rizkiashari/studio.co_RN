@@ -45,7 +45,7 @@ const allContent = [
   },
 ];
 
-const DetailContents = ({navigation}) => {
+const DetailContents = ({onPress}) => {
   return (
     <View style={styles.wrappper}>
       <Text style={styles.title}>Alamat</Text>
@@ -55,9 +55,7 @@ const DetailContents = ({navigation}) => {
       <Gap height={36} />
       <View style={styles.wrapperContent}>
         <Text style={styles.title}>Perlengkapan:</Text>
-        <TouchableOpacity
-          style={styles.btnDetail}
-          onPress={() => navigation.navigate('DetailPerlengkapanPage')}>
+        <TouchableOpacity style={styles.btnDetail} onPress={onPress}>
           <Text style={styles.btnTitle}>Lihat detail</Text>
         </TouchableOpacity>
       </View>

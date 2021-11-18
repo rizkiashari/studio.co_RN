@@ -24,7 +24,7 @@ import {colors, fonts} from '../../utils';
 
 const {width} = Dimensions.get('window');
 
-const DetailStudio = () => {
+const DetailStudio = ({navigation}) => {
   const [imageCarousel, setImageCarousel] = useState([
     {id: 1, image: DummyHistory_1},
     {id: 2, image: DummyHistory_2},
@@ -113,7 +113,11 @@ const DetailStudio = () => {
             />
           </View>
           <Gap height={20} />
-          {detailStudio && <DetailContents />}
+          {detailStudio && (
+            <DetailContents
+              onPress={() => navigation.navigate('DetailPerlengkapanPage')}
+            />
+          )}
           {paketStudio && <PaketContents />}
           {ReviewStudio && <ReviewContents />}
         </View>

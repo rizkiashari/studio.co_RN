@@ -48,7 +48,7 @@ const MainApp = () => {
 
 const Router = () => {
   return (
-    <Stack.Navigator initialRouteName="SignIn">
+    <Stack.Navigator initialRouteName="DetailPerlengkapanPage">
       <Stack.Screen
         name="SearchPage"
         component={SearchPage}

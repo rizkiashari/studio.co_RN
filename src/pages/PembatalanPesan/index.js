@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, {useState} from 'react';
 import {ScrollView, StyleSheet, View, Text} from 'react-native';
 import {
@@ -16,7 +17,7 @@ const PembatalanPesan = () => {
   return (
     <View style={styles.page}>
       <View>
-        <ScrollView>
+        <ScrollView showsVerticalScrollIndicator={false}>
           <Gap height={28} />
           <Header title="Pembatalan Pesanan" />
           <Gap height={24} />

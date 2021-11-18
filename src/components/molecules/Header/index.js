@@ -10,7 +10,7 @@ const Header = ({title, type, onPress}) => {
   }
 
   return (
-    <TouchableOpacity style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={onPress}>
       <IconBack />
       <Text style={styles.title}>{title}</Text>
     </TouchableOpacity>
